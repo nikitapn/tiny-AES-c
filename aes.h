@@ -11,22 +11,23 @@
 // ECB enables the basic ECB 16-byte block algorithm. All can be enabled simultaneously.
 
 // The #ifndef-guard allows it to be configured before #include'ing or at compile time.
-#ifndef CBC
-  #define CBC 1
-#endif
+// #ifndef CBC
+//   #define CBC 1
+// #endif
+// 
+// #ifndef ECB
+//   #define ECB 1
+// #endif
+// 
+// #ifndef CTR
+//   #define CTR 1
+// #endif
+//
 
-#ifndef ECB
-  #define ECB 1
-#endif
-
-#ifndef CTR
-  #define CTR 1
-#endif
-
-
-#define AES128 1
+//#define AES128 1
 //#define AES192 1
-//#define AES256 1
+#define AES256 1
+#define ECB 1
 
 #define AES_BLOCKLEN 16 // Block length in bytes - AES is 128b block only
 
